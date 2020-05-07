@@ -1,0 +1,97 @@
+.carousel {
+    margin: auto;
+    position: relative;
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+}
+.carousel__inner--wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #eee;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(46, 211, 211, 1);
+    overflow: hidden;
+}
+.carousel__inner {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    transition: transform 0.8s;
+}
+.carousel__inner-item {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.carousel__inner-item--content {
+    width: 100%;
+    height: 100%;
+}
+.carousel__inner-item--content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel__button--left {
+    height: 35px;
+    width: 35px;
+    background: url('https://img.icons8.com/flat_round/35/000000/left--v1.png');
+    background-size: cover;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-60px, -50%);
+}
+.carousel__button--right {
+    height: 35px;
+    width: 35px;
+    background: url('https://img.icons8.com/flat_round/35/000000/right--v1.png');
+    background-size: cover;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(60px ,-50%);
+}
+.carousel__indicator-dots ul{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.carousel__indicator-dots ul li {
+    background: rgba(0,0,0,0.4);
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    margin: 0 3px;
+}
+.active-dot {
+    background: rgba(0,0,0,0.8) !important;
+}
+.carousel__inner-item--heading, 
+.carousel__inner-item--description {
+    width: 100%;
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    padding: 0 100px;
+    padding-bottom: 0;
+}
+.carousel__inner-item--heading h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 28px;
+}
+.carousel__inner-item--description {
+    bottom: -100px;
+}
